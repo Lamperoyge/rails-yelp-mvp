@@ -10,20 +10,28 @@
       <th colspan="3"></th>
     </tr>
   </thead>
-
-  <tbody>
-    <% @restaurants.each do |restaurant| %>
-      <tr>
-        <td><%= restaurant.name %></td>
-        <td><%= restaurant.address %></td>
-        <td><%= restaurant.phone_number %></td>
-        <td><%= restaurant.category %></td>
-        <td><%= link_to 'Show', restaurant %></td>
-      </tr>
-    <% end %>
-  </tbody>
+  <div class="container">
+   <div class="row">
+    <div class="col-xs-12 col-sm-4">
+    <thead>
+      <% @restaurants.each do |restaurant| %>
+        <tr>
+          <td><%= restaurant.name %></td>
+          <td><%= restaurant.address %></td>
+          <td><%= restaurant.phone_number %></td>
+          <td><%= restaurant.category %></td>
+          <td><%= link_to 'Show', restaurant, class: "btn btn-danger" %></td>
+        </tr>
+      <% end %>
+      </div>
+    </thead>
+   </div>
+  </div>
 </table>
 
 <br>
 
-<%= link_to 'New Restaurant', new_restaurant_path %>
+<%= link_to 'New Restaurant', new_restaurant_path, class: "btn btn-primary" %>
+
+
+

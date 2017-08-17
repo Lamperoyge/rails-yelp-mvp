@@ -1,1 +1,24 @@
-// Specific CSS for your home-page
+.main-container {
+  background-image: url('https://busites_www.s3.amazonaws.com/acdccom/content/banners/1.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  color:white;
+
+
+}
+
+td {
+  padding: 20px;
+}
+
+table {
+
+}
+
+
+.btn-primary {
+  position:relative;
+  left: 40%;
+  right: 50%;
+}
+
